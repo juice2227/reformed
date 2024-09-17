@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Christian Reformed Church</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="orphancare.html" class="nav-link">Orphan Care</a></li>
+                    <li class="nav-item"><a href="widowscare.html" class="nav-link">Widow Support</a></li>
+                    <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                    <li class="nav-item"><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid p-0">
+        <div class="row g-0 volunteer-section">
+           
+            <div class="">
+                <div class="volunteer-card green" style="background-image: url('./images/widows.jpg');">
+                    <h2 class="fw-bold">Donate</h2>
+                    <p>Let's make a difference in people's life.</p>
+                    <a href="#" class="btn btn-warning mt-3">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container donate-container">
+        <div class="donate-form">
+            <h1 class="mb-4">Donate Now</h1>
+    
+            
+            <div class="mb-3">
+                <label for="donationAmount" class="form-label">Select Donation Amount:</label>
+                <div class="donation-amount-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="donationAmount" id="amount25" value="25">
+                        <label class="form-check-label" for="amount25">$25</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="donationAmount" id="amount50" value="50">
+                        <label class="form-check-label" for="amount50">$50</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="donationAmount" id="amount100" value="100">
+                        <label class="form-check-label" for="amount100">$100</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="donationAmount" id="amount250" value="250">
+                        <label class="form-check-label" for="amount250">$250</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="donationAmount" id="customAmount" value="custom">
+                        <label class="form-check-label" for="customAmount">Custom Amount</label>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="mb-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="donationType" id="textDonation" value="text" checked>
+                    <label class="form-check-label" for="textDonation">Text Donation</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="donationType" id="offlineDonation" value="offline">
+                    <label class="form-check-label" for="offlineDonation">Offline Donation</label>
+                </div>
+            </div>
+    
+            
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name *</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="comment" rows="3" placeholder="Leave a Comment"></textarea>
+            </div>
+    
+    
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="anonymousDonation">
+                <label class="form-check-label" for="anonymousDonation">Make This An Anonymous Donation.</label>
+            </div>
+    
+            
+            <button type="submit" class="btn-donate">Donate Now</button>
+        </div>
+    
+        
+        <div class="donate-details">
+            <div class="card">
+                <img src="images/children-running-orphanage.png" alt="Donation Cause" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Charity is a simple method to prove kindness of nation</h5>
+                    <p>Founded: 91.50%</p>
+                    <p>Raised: $34,000 | Goal: $40,500</p>
+                </div>
+            </div>
+    
+            
+            <div class="recent-cases mt-4">
+                <h5>Recent Cases</h5>
+                <div class="recent-case">
+                    <img src="images/children-running-orphanage.png" height="50" width="50" alt="Education program">
+                    <div class="recent-case-content">
+                        <p>Education program in Uganda</p>
+                        <small>October 25, 2023</small>
+                    </div>
+                </div>
+                <div class="recent-case">
+                    <img src="images/children-running-orphanage.png" height="50" width="50" alt="Water crisis">
+                    <div class="recent-case-content">
+                        <p>African water crisis: Children and women</p>
+                        <small>October 25, 2023</small>
+                    </div>
+                </div>
+                <div class="recent-case">
+                    <img src="images/children-running-orphanage.png" alt="Poor people and kids" height="50" width="50">
+                    <div class="recent-case-content">
+                        <p>Be kind for the poor people and the kids</p>
+                        <small>October 25, 2023</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-wrapper">
+        <div class="container">
+            <div class="join-banner text-center">
+                <h2 class="mb-3">Join Your hand with us for a better<br>life and future</h2>
+                <button class="btn btn-dark">Discover More</button>
+            </div>
+        </div>
+    </div>
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Christian Reformed Church</h5>
+                    <p>Christian Reformed Church in Eastern Africa.Began in 1997.It has branches in Kenya , Uganda , Rwanda , Burundi ,Congo.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="donate.html" >Donate</a></li>
+                        <li><a href="widowscare.html">Women Care</a></li>
+                        <li><a href="orphancare.html">Orphans Care</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="volunteer.html">Become Volunteer</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Subscribe Newsletter</h5>
+                    <p>Join our newsletter to stay updated about our latest news and articles.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="subscribe-btn">
+                            <button class="btn btn-primary" type="button" id="subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 christianReformedChurch. Terms and Conditions Apply</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
