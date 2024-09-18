@@ -42,77 +42,82 @@
         </div>
     </div>
     <div class="container donate-container">
-        <div class="donate-form">
-            <h1 class="mb-4">Donate Now</h1>
-    
+        <div class="row">
+            <div class="col-12 col-lg-8 mb-4">
+                <div class="donate-form">
+                    <h1 class="mb-4">Donate Now</h1>
             
-            <div class="mb-3">
-                <label for="donationAmount" class="form-label">Select Donation Amount:</label>
-                <div class="donation-amount-group">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="donationAmount" id="amount25" value="25">
-                        <label class="form-check-label" for="amount25">$25</label>
+                    
+                    <div class="mb-3">
+                        <label for="donationAmount" class="form-label">Select Donation Amount:</label>
+                        <div class="donation-amount-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="donationAmount" id="amount25" value="25">
+                                <label class="form-check-label" for="amount25">$25</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="donationAmount" id="amount50" value="50">
+                                <label class="form-check-label" for="amount50">$50</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="donationAmount" id="amount100" value="100">
+                                <label class="form-check-label" for="amount100">$100</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="donationAmount" id="amount250" value="250">
+                                <label class="form-check-label" for="amount250">$250</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="donationAmount" id="customAmount" value="custom">
+                                <label class="form-check-label" for="customAmount">Custom Amount</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="donationAmount" id="amount50" value="50">
-                        <label class="form-check-label" for="amount50">$50</label>
+            
+                    
+                    <div class="mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="donationType" id="textDonation" value="text" checked>
+                            <label class="form-check-label" for="textDonation">Text Donation</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="donationType" id="offlineDonation" value="offline">
+                            <label class="form-check-label" for="offlineDonation">Offline Donation</label>
+                        </div>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="donationAmount" id="amount100" value="100">
-                        <label class="form-check-label" for="amount100">$100</label>
+            
+                    
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name *</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="donationAmount" id="amount250" value="250">
-                        <label class="form-check-label" for="amount250">$250</label>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name *</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="donationAmount" id="customAmount" value="custom">
-                        <label class="form-check-label" for="customAmount">Custom Amount</label>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
                     </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3" placeholder="Leave a Comment"></textarea>
+                    </div>
+            
+            
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="anonymousDonation">
+                        <label class="form-check-label" for="anonymousDonation">Make This An Anonymous Donation.</label>
+                    </div>
+            
+                    
+                    <button type="submit" class="btn-donate">Donate Now</button>
                 </div>
             </div>
-    
-            
-            <div class="mb-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="donationType" id="textDonation" value="text" checked>
-                    <label class="form-check-label" for="textDonation">Text Donation</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="donationType" id="offlineDonation" value="offline">
-                    <label class="form-check-label" for="offlineDonation">Offline Donation</label>
-                </div>
-            </div>
-    
-            
-            <div class="mb-3">
-                <label for="firstName" class="form-label">First Name *</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
-            </div>
-            <div class="mb-3">
-                <label for="lastName" class="form-label">Last Name *</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-                <label for="comment" class="form-label">Comment</label>
-                <textarea class="form-control" id="comment" rows="3" placeholder="Leave a Comment"></textarea>
-            </div>
-    
-    
-            <div class="form-check mb-4">
-                <input class="form-check-input" type="checkbox" id="anonymousDonation">
-                <label class="form-check-label" for="anonymousDonation">Make This An Anonymous Donation.</label>
-            </div>
-    
-            
-            <button type="submit" class="btn-donate">Donate Now</button>
         </div>
     
         
+      <div class="col-12 col-lg-4">
         <div class="donate-details">
             <div class="card">
                 <img src="images/children-running-orphanage.png" alt="Donation Cause" class="card-img-top" >
@@ -149,6 +154,7 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
     <div class="banner-wrapper">
         <div class="container">
@@ -162,7 +168,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 mb-4">
+                <div class=" col-12 col-sm-6 col-lg-3 mb-4">
                     <h5>Christian Reformed Church</h5>
                     <p>Christian Reformed Church in Eastern Africa.Began in 1997.It has branches in Kenya , Uganda , Rwanda , Burundi ,Congo.</p>
                     <div class="social-icons">
