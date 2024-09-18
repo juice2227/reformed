@@ -511,39 +511,28 @@ h1 {
   transform: scale(1.1);
 }
 
-.add-icon {
-  color: white;
-  font-size: 3rem;
-}
 
+/* Container for form and details */
 .donate-container {
   padding: 2rem 0;
 }
 
+/* Donate form styling */
 .donate-form {
   background-color: #f7fcf8;
   padding: 30px;
   border-radius: 10px;
-  flex: 2;
 }
 
-.donate-details {
-  flex: 1;
-  padding-left: 30px;
-}
-
+/* Donate details and recent cases styling */
 .donate-details img {
   width: 100%;
   border-radius: 10px;
 }
 
-.donate-details .recent-cases {
-  margin-top: 20px;
-}
-
-.recent-cases {
-  
- margin-top: 2rem;
+.donate-details, .recent-cases {
+  margin-bottom: 2rem;
+  padding: 30px;
 }
 
 .donate-form label {
@@ -556,18 +545,17 @@ h1 {
   margin-bottom: 20px;
 }
 
-.donation-amount-group .form-check-input {
+.form-check-input {
   margin-right: 5px;
 }
-@media (max-width: 768px) {
-  .volunteer-card {
-    height: 200px;
-  }
-  .donate-form, .donate-details {
-    padding: 15px;
-  }
+
+.donation-amount-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
+/* Button styling */
 .btn-donate {
   background-color: #007b5e;
   color: white;
@@ -581,6 +569,8 @@ h1 {
 .btn-donate:hover {
   background-color: #005f46;
 }
+
+/* Recent cases */
 .recent-case {
   margin-bottom: 1rem;
   display: flex;
@@ -593,7 +583,6 @@ h1 {
   object-fit: cover;
   border-radius: 5px;
   margin-right: 1rem;
-  
 }
 
 .recent-case-content p {
@@ -603,12 +592,34 @@ h1 {
 .recent-case-content small {
   color: #666;
 }
+
+/* Layout for donation form and details */
+.donate-details-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media query for mobile screens */
 @media (max-width: 768px) {
-  .donate-form, .donate-details{
-    margin-bottom: 2rem;
+  .volunteer-card {
+    height: 200px;
   }
   
+  .donate-form, .donate-details {
+    padding: 15px;
+    margin-bottom: 2rem;
+  }
 }
+
+/* Media query for desktop screens (992px and above) */
+@media (min-width: 992px) {
+  .donate-details-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+
 .main-content {
   background-color: #f8f9fa;
   padding: 50px 0;
