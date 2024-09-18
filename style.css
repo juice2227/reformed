@@ -512,19 +512,18 @@ h1 {
 }
 
 
-/* Container for form and details */
 .donate-container {
   padding: 2rem 0;
 }
 
-/* Donate form styling */
+
 .donate-form {
   background-color: #f7fcf8;
   padding: 30px;
   border-radius: 10px;
 }
 
-/* Donate details and recent cases styling */
+
 .donate-details img {
   width: 100%;
   border-radius: 10px;
@@ -555,7 +554,7 @@ h1 {
   gap: 0.5rem;
 }
 
-/* Button styling */
+
 .btn-donate {
   background-color: #007b5e;
   color: white;
@@ -570,7 +569,7 @@ h1 {
   background-color: #005f46;
 }
 
-/* Recent cases */
+
 .recent-case {
   margin-bottom: 1rem;
   display: flex;
@@ -593,13 +592,13 @@ h1 {
   color: #666;
 }
 
-/* Layout for donation form and details */
+
 .donate-details-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-/* Media query for mobile screens */
+
 @media (max-width: 768px) {
   .volunteer-card {
     height: 200px;
@@ -611,7 +610,7 @@ h1 {
   }
 }
 
-/* Media query for desktop screens (992px and above) */
+
 @media (min-width: 992px) {
   .donate-details-wrapper {
     display: flex;
